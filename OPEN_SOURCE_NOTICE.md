@@ -1,33 +1,33 @@
 # Open Source Notice
 
-## 1. 项目来源
+## 1. Project Source
 
-本项目是一个课程作业型的二次开发版本，基础平台跳跃框架参考自开源项目 `2D-platformer-main`。
+This project is a course-project style derivative work. The art elements were referenced from [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer).
 
-当前本地目录中未包含原始仓库地址，也未附带上游 `LICENSE` 文件。
+The code logic, level structure, event system, and boss mechanics in this repository were further developed and reorganized locally. This notice only claims the image/art source, not a direct reuse of the upstream code base.
 
-## 2. 当前仓库中已完成的工作
+## 2. What Has Been Built Here
 
-- 对关卡结构进行了重做与扩展
-- 新增了触发器与事件联动玩法
-- 重做了第三关 Boss 房与 Boss 战节奏
-- 增加了火球能力、强化掉落、宠物支援与调试功能
-- 补充了 HUD、帮助、暂停与课程汇报文档
+- Reworked and expanded the level structure
+- Added trigger-driven event interactions
+- Redesigned the third-stage boss room and boss fight pacing
+- Added fireball abilities, permanent upgrades, pet support, and debug tools
+- Completed the HUD, help panel, pause flow, and class-report documents
 
-## 3. 公开发布前建议确认
+## 3. Before Public Release
 
-为避免授权信息不完整，建议在正式公开仓库前确认以下内容：
+To keep the attribution complete, please confirm the following before a formal public release:
 
-1. `2D-platformer-main` 的上游仓库地址
-2. 上游项目的许可证类型及其再分发要求
-3. 本地使用的图片素材来源及再分发许可
+1. The license type and redistribution terms of `joshGilstrap/2D-platformer`
+2. The redistribution permission for the local image assets used here
+3. Whether the image source should also be listed separately in `README`
 
-## 4. 当前处理原则
+## 4. Current Policy
 
-在未确认上游许可证前，本仓库先保留来源说明，不额外声明新的 `LICENSE`，避免出现授权冲突或错误授权。
+Until the upstream license is confirmed, this repository keeps a source attribution notice and does not add a new `LICENSE` file on its own, so that no incorrect licensing claim is made.
 
-一旦确认上游许可证信息，建议补充：
+Once the upstream license is confirmed, it is recommended to add:
 
 - `LICENSE`
-- 更完整的 `README` 致谢与来源链接
-- 如有需要，补充素材来源清单
+- A fuller `README` attribution section with links
+- A more complete asset source list if needed
