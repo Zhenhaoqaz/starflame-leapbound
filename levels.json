@@ -1,0 +1,2275 @@
+{
+  "levels": [
+    {
+      "name": "第一关",
+      "subtitle": "直接开打",
+      "index": 0,
+      "time_par": "03:00",
+      "tip": "先冲起来，火球能顺手清前方威胁。",
+      "failure_hint": "移动平台先观察一轮再上；裂纹平台会延迟坠落。封门以后别贪前冲，先清空中怪。",
+      "level_width": 5000,
+      "level_height": 900,
+      "player": [
+        {
+          "type": "player",
+          "x": 100,
+          "y": 760,
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "walls": [
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 900
+        },
+        {
+          "type": "wall",
+          "x": 4950,
+          "y": 0,
+          "width": 50,
+          "height": 900
+        },
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 810,
+          "width": 650,
+          "height": 90
+        },
+        {
+          "type": "wall",
+          "x": 960,
+          "y": 810,
+          "width": 520,
+          "height": 90
+        },
+        {
+          "type": "wall",
+          "x": 1810,
+          "y": 810,
+          "width": 560,
+          "height": 90
+        },
+        {
+          "type": "wall",
+          "x": 2700,
+          "y": 810,
+          "width": 900,
+          "height": 90
+        },
+        {
+          "type": "wall",
+          "x": 3920,
+          "y": 810,
+          "width": 1080,
+          "height": 90
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 740,
+          "y": 690,
+          "width": 120,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 96,
+          "speed": 1.8,
+          "phase": 0.3
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 1530,
+          "y": 650,
+          "width": 130,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 120,
+          "speed": 1.9,
+          "phase": 0.9
+        },
+        {
+          "type": "falling_platform",
+          "x": 1700,
+          "y": 610,
+          "width": 110,
+          "height": 24,
+          "delay": 36,
+          "respawn_time": 180,
+          "tag": "intro_fall_0"
+        },
+        {
+          "type": "wall",
+          "x": 1920,
+          "y": 540,
+          "width": 140,
+          "height": 24
+        },
+        {
+          "type": "fake_wall",
+          "x": 2230,
+          "y": 620,
+          "width": 90,
+          "height": 190,
+          "tag": "fake_intro_0"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 2340,
+          "y": 540,
+          "width": 140,
+          "height": 22,
+          "tag": "reward_ledge_0",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 2480,
+          "y": 600,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "toggle_wall",
+          "x": 2660,
+          "y": 650,
+          "width": 60,
+          "height": 160,
+          "tag": "gate_left_0",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3500,
+          "y": 650,
+          "width": 60,
+          "height": 160,
+          "tag": "gate_right_0",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3630,
+          "y": 720,
+          "width": 170,
+          "height": 22,
+          "tag": "post_gate_bridge_0",
+          "visible": false
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 4140,
+          "y": 640,
+          "width": 140,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 110,
+          "speed": 2.1,
+          "phase": 0.2
+        },
+        {
+          "type": "wall",
+          "x": 4380,
+          "y": 520,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "wall",
+          "x": 4620,
+          "y": 410,
+          "width": 160,
+          "height": 24
+        }
+      ],
+      "enemies": [
+        {
+          "type": "enemy",
+          "x": 1040,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "speed": 2,
+          "dir": 1,
+          "color": "RED"
+        },
+        {
+          "type": "enemy",
+          "x": 2050,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "speed": 2,
+          "dir": -1,
+          "color": "ORANGE"
+        }
+      ],
+      "pickups": [],
+      "tokens": [
+        {
+          "type": "token",
+          "x": 780,
+          "y": 654,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 10
+        },
+        {
+          "type": "token",
+          "x": 1568,
+          "y": 614,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 15
+        },
+        {
+          "type": "token",
+          "x": 1738,
+          "y": 574,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 1960,
+          "y": 504,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 2378,
+          "y": 504,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 2568,
+          "y": 564,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 3208,
+          "y": 684,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 4180,
+          "y": 604,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 4420,
+          "y": 484,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 4660,
+          "y": 374,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 30
+        }
+      ],
+      "hazards": [
+        {
+          "type": "hazard",
+          "x": 670,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 720,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 770,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1540,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1590,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1640,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 3730,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 3780,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 3830,
+          "y": 760,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        }
+      ],
+      "checkpoints": [
+        {
+          "x": 1910,
+          "y": 690,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 1860,
+          "spawn_y": 760,
+          "label": "节奏练习后"
+        },
+        {
+          "x": 3230,
+          "y": 690,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 3160,
+          "spawn_y": 760,
+          "label": "封门前"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "trigger_move_teach_0",
+          "x": 610,
+          "y": 0,
+          "width": 90,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_fall_teach_0",
+          "x": 1460,
+          "y": 0,
+          "width": 90,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_secret_0",
+          "x": 2200,
+          "y": 0,
+          "width": 80,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_armory_0",
+          "x": 2460,
+          "y": 0,
+          "width": 80,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_gate_0",
+          "x": 2860,
+          "y": 0,
+          "width": 100,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_final_air_0",
+          "x": 4010,
+          "y": 0,
+          "width": 90,
+          "height": 900,
+          "once": true
+        },
+        {
+          "id": "trigger_finish_0",
+          "x": 4580,
+          "y": 0,
+          "width": 90,
+          "height": 900,
+          "once": true
+        }
+      ],
+      "events": [
+        {
+          "trigger": "trigger_move_teach_0",
+          "type": "set_hint",
+          "message": "先观察平台轨迹，一关只教一件事：别急着跳。"
+        },
+        {
+          "trigger": "trigger_fall_teach_0",
+          "type": "set_hint",
+          "message": "裂纹平台会延迟下坠，踩上去以后要立刻做决定。"
+        },
+        {
+          "trigger": "trigger_fall_teach_0",
+          "type": "drop_platform",
+          "tag": "intro_fall_0",
+          "delay": 16,
+          "message": "平台开始松动"
+        },
+        {
+          "trigger": "trigger_secret_0",
+          "type": "break_fake_wall",
+          "tag": "fake_intro_0",
+          "message": "假墙破开，奖励位出现"
+        },
+        {
+          "trigger": "trigger_secret_0",
+          "type": "toggle_wall",
+          "tag": "reward_ledge_0",
+          "visible": true,
+          "message": "试试走一条更大胆的路"
+        },
+        {
+          "trigger": "trigger_armory_0",
+          "type": "set_hint",
+          "message": "拿火球以后节奏会变，空中怪别硬碰，先点掉它。"
+        },
+        {
+          "trigger": "trigger_gate_0",
+          "type": "start_encounter",
+          "message": "训练封门启动",
+          "clear_message": "你已经学会先处理高位威胁了",
+          "lock_tags": [
+            "gate_left_0",
+            "gate_right_0"
+          ],
+          "unlock_tags": [
+            "gate_left_0",
+            "gate_right_0"
+          ],
+          "reveal_tags": [
+            "post_gate_bridge_0"
+          ],
+          "enemies": [
+            {
+              "type": "enemy",
+              "x": 2940,
+              "y": 760,
+              "width": 50,
+              "height": 50,
+              "speed": 2,
+              "dir": 1,
+              "color": "RED"
+            },
+            {
+              "type": "enemy",
+              "x": 3200,
+              "y": 760,
+              "width": 50,
+              "height": 50,
+              "speed": 2,
+              "dir": -1,
+              "color": "ORANGE"
+            },
+            {
+              "type": "enemy",
+              "enemy_type": "flyer",
+              "x": 3130,
+              "y": 600,
+              "width": 58,
+              "height": 42,
+              "speed": 1.8,
+              "dir": -1,
+              "color": "CYAN",
+              "health": 3,
+              "patrol_distance": 120,
+              "hover_amplitude": 24,
+              "hover_speed": 0.12,
+              "score_value": 40
+            }
+          ],
+          "waves": [
+            {
+              "delay": 72,
+              "message": "再来一只高位增援",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "x": 3360,
+                  "y": 760,
+                  "width": 50,
+                  "height": 50,
+                  "speed": 2,
+                  "dir": -1,
+                  "color": "RED"
+                },
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 2920,
+                  "y": 560,
+                  "width": 58,
+                  "height": 42,
+                  "speed": 1.9,
+                  "dir": 1,
+                  "color": "CYAN",
+                  "health": 3,
+                  "patrol_distance": 110,
+                  "hover_amplitude": 18,
+                  "hover_speed": 0.13,
+                  "score_value": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "trigger": "trigger_final_air_0",
+          "type": "spawn_wave",
+          "message": "最后一段别急，先清空头顶",
+          "enemies": [
+            {
+              "type": "enemy",
+              "enemy_type": "flyer",
+              "x": 4250,
+              "y": 470,
+              "width": 58,
+              "height": 42,
+              "speed": 1.9,
+              "dir": -1,
+              "color": "CYAN",
+              "health": 3,
+              "patrol_distance": 140,
+              "hover_amplitude": 18,
+              "hover_speed": 0.12,
+              "score_value": 45
+            }
+          ]
+        },
+        {
+          "trigger": "trigger_finish_0",
+          "type": "set_hint",
+          "message": "教学结束，下一关开始把这些东西混在一起用。"
+        },
+        {
+          "trigger": "trigger_armory_0",
+          "type": "drop_buff",
+          "x": 2720,
+          "y": 520,
+          "buff_type": "rapid",
+          "message": "急速咏唱从天而降，趁现在压过去"
+        }
+      ],
+      "exit_zone": {
+        "x": 4720,
+        "y": 265,
+        "width": 88,
+        "height": 145
+      }
+    },
+    {
+      "name": "第二关",
+      "subtitle": "分流压迫",
+      "index": 1,
+      "time_par": "04:15",
+      "tip": "前半段直接推进，后半段开始处理高低位一起压过来的敌人。",
+      "failure_hint": "如果总被长廊压住，先清高位蝙蝠，再处理地面怪。封门里别顶着冲，留出横向位移空间。",
+      "level_width": 6400,
+      "level_height": 1040,
+      "player": [
+        {
+          "type": "player",
+          "x": 120,
+          "y": 910,
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "walls": [
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 1040
+        },
+        {
+          "type": "wall",
+          "x": 6350,
+          "y": 0,
+          "width": 50,
+          "height": 1040
+        },
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 960,
+          "width": 740,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 1100,
+          "y": 960,
+          "width": 620,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 2060,
+          "y": 960,
+          "width": 1260,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 3640,
+          "y": 960,
+          "width": 2760,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 790,
+          "y": 520,
+          "width": 60,
+          "height": 440
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 880,
+          "y": 810,
+          "width": 120,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 120,
+          "speed": 1.9,
+          "phase": 0.2
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 1080,
+          "y": 680,
+          "width": 130,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 110,
+          "speed": 2.0,
+          "phase": 0.9
+        },
+        {
+          "type": "wall",
+          "x": 1320,
+          "y": 560,
+          "width": 160,
+          "height": 24
+        },
+        {
+          "type": "falling_platform",
+          "x": 1570,
+          "y": 470,
+          "width": 110,
+          "height": 24,
+          "delay": 28,
+          "respawn_time": 170,
+          "tag": "shaft_drop_1"
+        },
+        {
+          "type": "fake_wall",
+          "x": 1810,
+          "y": 340,
+          "width": 90,
+          "height": 200,
+          "tag": "shaft_fake_1"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 2230,
+          "y": 780,
+          "width": 60,
+          "height": 180,
+          "tag": "encounter_gate_left_1",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3180,
+          "y": 780,
+          "width": 60,
+          "height": 180,
+          "tag": "encounter_gate_right_1",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 2440,
+          "y": 800,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 2680,
+          "y": 710,
+          "width": 140,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 120,
+          "speed": 2.0,
+          "phase": 0.6
+        },
+        {
+          "type": "wall",
+          "x": 2960,
+          "y": 630,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3380,
+          "y": 820,
+          "width": 200,
+          "height": 24,
+          "tag": "mid_bridge_1",
+          "visible": false
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 3880,
+          "y": 760,
+          "width": 140,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 110,
+          "speed": 1.8,
+          "phase": 0.4
+        },
+        {
+          "type": "wall",
+          "x": 4140,
+          "y": 660,
+          "width": 160,
+          "height": 24
+        },
+        {
+          "type": "falling_platform",
+          "x": 4400,
+          "y": 560,
+          "width": 110,
+          "height": 24,
+          "delay": 24,
+          "respawn_time": 165,
+          "tag": "gauntlet_drop_1"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 4420,
+          "y": 780,
+          "width": 60,
+          "height": 180,
+          "tag": "gauntlet_gate_left_1",
+          "visible": false
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 4700,
+          "y": 710,
+          "width": 140,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 130,
+          "speed": 2.2,
+          "phase": 0.1
+        },
+        {
+          "type": "wall",
+          "x": 4990,
+          "y": 610,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "falling_platform",
+          "x": 5260,
+          "y": 520,
+          "width": 110,
+          "height": 24,
+          "delay": 22,
+          "respawn_time": 165,
+          "tag": "gauntlet_drop_2"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 5600,
+          "y": 780,
+          "width": 60,
+          "height": 180,
+          "tag": "gauntlet_gate_right_1",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 5710,
+          "y": 720,
+          "width": 220,
+          "height": 24,
+          "tag": "gauntlet_bridge_1",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 5860,
+          "y": 580,
+          "width": 160,
+          "height": 24
+        },
+        {
+          "type": "wall",
+          "x": 6080,
+          "y": 430,
+          "width": 170,
+          "height": 24
+        }
+      ],
+      "enemies": [
+        {
+          "type": "enemy",
+          "x": 1210,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "speed": 2,
+          "dir": 1,
+          "color": "RED"
+        },
+        {
+          "type": "enemy",
+          "x": 1490,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "speed": 2,
+          "dir": -1,
+          "color": "ORANGE"
+        },
+        {
+          "type": "enemy",
+          "enemy_type": "flyer",
+          "x": 3920,
+          "y": 620,
+          "width": 58,
+          "height": 42,
+          "speed": 1.8,
+          "dir": -1,
+          "color": "CYAN",
+          "health": 3,
+          "patrol_distance": 130,
+          "hover_amplitude": 24,
+          "hover_speed": 0.12,
+          "score_value": 40
+        }
+      ],
+      "pickups": [],
+      "tokens": [
+        {
+          "type": "token",
+          "x": 918,
+          "y": 774,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 10
+        },
+        {
+          "type": "token",
+          "x": 1120,
+          "y": 644,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 15
+        },
+        {
+          "type": "token",
+          "x": 1608,
+          "y": 434,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 1930,
+          "y": 324,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 2478,
+          "y": 764,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 2718,
+          "y": 674,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 2998,
+          "y": 594,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 3918,
+          "y": 724,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 4428,
+          "y": 524,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 4738,
+          "y": 674,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 5270,
+          "y": 484,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 30
+        },
+        {
+          "type": "token",
+          "x": 5870,
+          "y": 544,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 30
+        },
+        {
+          "type": "token",
+          "x": 6120,
+          "y": 394,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 35
+        }
+      ],
+      "hazards": [
+        {
+          "type": "hazard",
+          "x": 760,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 810,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 860,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1760,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1810,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1860,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 4520,
+          "y": 620,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "down"
+        },
+        {
+          "type": "hazard",
+          "x": 5050,
+          "y": 570,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "down"
+        }
+      ],
+      "checkpoints": [
+        {
+          "x": 1450,
+          "y": 440,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 1400,
+          "spawn_y": 510,
+          "label": "分流上层"
+        },
+        {
+          "x": 2840,
+          "y": 680,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 2770,
+          "spawn_y": 760,
+          "label": "中场封门前"
+        },
+        {
+          "x": 4310,
+          "y": 700,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 4250,
+          "spawn_y": 760,
+          "label": "长廊压迫段"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "trigger_branch_hint_1",
+          "x": 700,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_shaft_drop_1",
+          "x": 1330,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_fake_shaft_1",
+          "x": 1770,
+          "y": 0,
+          "width": 80,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_encounter_1",
+          "x": 2280,
+          "y": 0,
+          "width": 100,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_bridge_1",
+          "x": 3380,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_gauntlet_1",
+          "x": 4460,
+          "y": 0,
+          "width": 100,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_finish_1",
+          "x": 6030,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        }
+      ],
+      "events": [
+        {
+          "trigger": "trigger_branch_hint_1",
+          "type": "set_hint",
+          "message": "第二关开始提速，先稳住移动平台和塌陷节奏。"
+        },
+        {
+          "trigger": "trigger_shaft_drop_1",
+          "type": "set_hint",
+          "message": "现在开始把移动平台和塌陷平台组合在一起。"
+        },
+        {
+          "trigger": "trigger_shaft_drop_1",
+          "type": "drop_platform",
+          "tag": "shaft_drop_1",
+          "delay": 18,
+          "message": "上路平台开始崩塌"
+        },
+        {
+          "trigger": "trigger_fake_shaft_1",
+          "type": "break_fake_wall",
+          "tag": "shaft_fake_1",
+          "message": "侧壁崩开，给你一块回旋空间。"
+        },
+        {
+          "trigger": "trigger_fake_shaft_1",
+          "type": "toggle_wall",
+          "tag": "upper_bonus_bridge_1",
+          "visible": false,
+          "message": ""
+        },
+        {
+          "trigger": "trigger_encounter_1",
+          "type": "start_encounter",
+          "message": "封门预警，先站到中间平台准备迎战",
+          "clear_message": "你已经能处理高低位同时压迫了",
+          "lock_tags": [
+            "encounter_gate_left_1",
+            "encounter_gate_right_1"
+          ],
+          "unlock_tags": [
+            "encounter_gate_left_1",
+            "encounter_gate_right_1"
+          ],
+          "reveal_tags": [
+            "mid_bridge_1"
+          ],
+          "enemies": [
+            {
+              "type": "enemy",
+              "x": 2380,
+              "y": 910,
+              "width": 50,
+              "height": 50,
+              "speed": 2,
+              "dir": 1,
+              "color": "RED"
+            },
+            {
+              "type": "enemy",
+              "x": 2640,
+              "y": 910,
+              "width": 50,
+              "height": 50,
+              "speed": 2,
+              "dir": -1,
+              "color": "RED"
+            },
+            {
+              "type": "enemy",
+              "enemy_type": "flyer",
+              "x": 2760,
+              "y": 620,
+              "width": 58,
+              "height": 42,
+              "speed": 1.8,
+              "dir": 1,
+              "color": "CYAN",
+              "health": 3,
+              "patrol_distance": 130,
+              "hover_amplitude": 24,
+              "hover_speed": 0.12,
+              "score_value": 40
+            }
+          ],
+          "waves": [
+            {
+              "delay": 110,
+              "message": "第二波压上来了，先清高位再收地面",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 2470,
+                  "y": 560,
+                  "width": 58,
+                  "height": 42,
+                  "speed": 1.9,
+                  "dir": -1,
+                  "color": "CYAN",
+                  "health": 3,
+                  "patrol_distance": 110,
+                  "hover_amplitude": 18,
+                  "hover_speed": 0.13,
+                  "score_value": 40
+                },
+                {
+                  "type": "enemy",
+                  "x": 2960,
+                  "y": 910,
+                  "width": 50,
+                  "height": 50,
+                  "speed": 2,
+                  "dir": -1,
+                  "color": "ORANGE"
+                }
+              ]
+            }
+          ],
+          "delay": 24
+        },
+        {
+          "trigger": "trigger_bridge_1",
+          "type": "set_hint",
+          "message": "后半段会更挤，先给自己留横向空间。"
+        },
+        {
+          "trigger": "trigger_gauntlet_1",
+          "type": "start_encounter",
+          "message": "长廊预热，先抢横向位置",
+          "clear_message": "长廊已肃清，撤离路径打开",
+          "lock_tags": [
+            "gauntlet_gate_left_1",
+            "gauntlet_gate_right_1"
+          ],
+          "unlock_tags": [
+            "gauntlet_gate_left_1",
+            "gauntlet_gate_right_1"
+          ],
+          "reveal_tags": [
+            "gauntlet_bridge_1"
+          ],
+          "enemies": [
+            {
+              "type": "enemy",
+              "x": 4540,
+              "y": 910,
+              "width": 50,
+              "height": 50,
+              "speed": 2,
+              "dir": 1,
+              "color": "RED"
+            },
+            {
+              "type": "enemy",
+              "enemy_type": "flyer",
+              "x": 4680,
+              "y": 610,
+              "width": 58,
+              "height": 42,
+              "speed": 1.9,
+              "dir": -1,
+              "color": "CYAN",
+              "health": 4,
+              "patrol_distance": 150,
+              "hover_amplitude": 24,
+              "hover_speed": 0.12,
+              "score_value": 45
+            },
+            {
+              "type": "enemy",
+              "enemy_type": "flyer",
+              "x": 5180,
+              "y": 520,
+              "width": 58,
+              "height": 42,
+              "speed": 1.9,
+              "dir": 1,
+              "color": "PURPLE",
+              "health": 4,
+              "patrol_distance": 140,
+              "hover_amplitude": 20,
+              "hover_speed": 0.13,
+              "score_value": 45
+            }
+          ],
+          "waves": [
+            {
+              "delay": 94,
+              "message": "地面和高位同时逼近",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "x": 4900,
+                  "y": 910,
+                  "width": 50,
+                  "height": 50,
+                  "speed": 2,
+                  "dir": -1,
+                  "color": "ORANGE"
+                },
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 5030,
+                  "y": 470,
+                  "width": 58,
+                  "height": 42,
+                  "speed": 2.0,
+                  "dir": 1,
+                  "color": "CYAN",
+                  "health": 4,
+                  "patrol_distance": 120,
+                  "hover_amplitude": 18,
+                  "hover_speed": 0.14,
+                  "score_value": 45
+                }
+              ]
+            },
+            {
+              "delay": 154,
+              "message": "最后一波从出口前压过来",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "x": 5450,
+                  "y": 910,
+                  "width": 50,
+                  "height": 50,
+                  "speed": 2,
+                  "dir": -1,
+                  "color": "RED"
+                },
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 5530,
+                  "y": 430,
+                  "width": 58,
+                  "height": 42,
+                  "speed": 2.0,
+                  "dir": -1,
+                  "color": "PURPLE",
+                  "health": 4,
+                  "patrol_distance": 130,
+                  "hover_amplitude": 18,
+                  "hover_speed": 0.14,
+                  "score_value": 50
+                }
+              ]
+            }
+          ],
+          "delay": 24
+        },
+        {
+          "trigger": "trigger_finish_1",
+          "type": "set_hint",
+          "message": "前两关学的都要在第三关用上，而且第三关不会再只是清小怪。"
+        },
+        {
+          "trigger": "trigger_bridge_1",
+          "type": "drop_buff",
+          "x": 3600,
+          "y": 620,
+          "buff_type": "shield",
+          "message": "护体余烬落下，带着它穿过后半段"
+        }
+      ],
+      "exit_zone": {
+        "x": 6110,
+        "y": 265,
+        "width": 88,
+        "height": 145
+      }
+    },
+    {
+      "name": "第三关",
+      "subtitle": "天穹审判者",
+      "index": 2,
+      "time_par": "04:50",
+      "tip": "传送门后就是审判场。Boss 会高空盘旋、环绕喷火、冲锋震波、召火眼压场。",
+      "failure_hint": "Boss 血很厚，但不是硬磨。护盾节点没碎之前都只是刮痧，多用高台和升降平台，等它冲锋落地后的震波从空中躲开。",
+      "level_width": 7600,
+      "level_height": 1040,
+      "player": [
+        {
+          "type": "player",
+          "x": 120,
+          "y": 910,
+          "width": 50,
+          "height": 50
+        }
+      ],
+      "walls": [
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 0,
+          "width": 50,
+          "height": 1040
+        },
+        {
+          "type": "wall",
+          "x": 7550,
+          "y": 0,
+          "width": 50,
+          "height": 1040
+        },
+        {
+          "type": "wall",
+          "x": 0,
+          "y": 960,
+          "width": 1100,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 1320,
+          "y": 960,
+          "width": 2620,
+          "height": 80
+        },
+        {
+          "type": "wall",
+          "x": 4300,
+          "y": 960,
+          "width": 900,
+          "height": 80
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 930,
+          "y": 840,
+          "width": 130,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 110,
+          "speed": 1.8,
+          "phase": 0.2
+        },
+        {
+          "type": "wall",
+          "x": 1170,
+          "y": 760,
+          "width": 150,
+          "height": 24
+        },
+        {
+          "type": "falling_platform",
+          "x": 1450,
+          "y": 680,
+          "width": 120,
+          "height": 24,
+          "delay": 34,
+          "respawn_time": 190,
+          "tag": "prep_fall_3"
+        },
+        {
+          "type": "wall",
+          "x": 1650,
+          "y": 600,
+          "width": 160,
+          "height": 24
+        },
+        {
+          "type": "fake_wall",
+          "x": 1800,
+          "y": 770,
+          "width": 90,
+          "height": 190,
+          "tag": "prep_fake_3"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 1880,
+          "y": 710,
+          "width": 150,
+          "height": 22,
+          "tag": "prep_reward_3",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 2100,
+          "y": 760,
+          "width": 60,
+          "height": 200,
+          "tag": "boss_gate_left_3",
+          "visible": false
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3840,
+          "y": 760,
+          "width": 60,
+          "height": 200,
+          "tag": "boss_gate_right_3",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 2320,
+          "y": 780,
+          "width": 190,
+          "height": 24
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 2580,
+          "y": 700,
+          "width": 140,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 120,
+          "speed": 1.7,
+          "phase": 0.2
+        },
+        {
+          "type": "falling_platform",
+          "x": 2480,
+          "y": 560,
+          "width": 120,
+          "height": 24,
+          "delay": 28,
+          "respawn_time": 165,
+          "tag": "arena_fall_left_3"
+        },
+        {
+          "type": "wall",
+          "x": 2850,
+          "y": 650,
+          "width": 170,
+          "height": 24
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 3030,
+          "y": 570,
+          "width": 150,
+          "height": 24,
+          "movement": "horizontal",
+          "distance": 180,
+          "speed": 1.9,
+          "phase": 0.7
+        },
+        {
+          "type": "falling_platform",
+          "x": 3360,
+          "y": 560,
+          "width": 120,
+          "height": 24,
+          "delay": 28,
+          "respawn_time": 165,
+          "tag": "arena_fall_right_3"
+        },
+        {
+          "type": "wall",
+          "x": 3460,
+          "y": 780,
+          "width": 190,
+          "height": 24
+        },
+        {
+          "type": "wall",
+          "x": 2740,
+          "y": 860,
+          "width": 90,
+          "height": 100
+        },
+        {
+          "type": "wall",
+          "x": 3210,
+          "y": 860,
+          "width": 90,
+          "height": 100
+        },
+        {
+          "type": "toggle_wall",
+          "x": 3960,
+          "y": 860,
+          "width": 320,
+          "height": 24,
+          "tag": "victory_bridge_3",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 4340,
+          "y": 760,
+          "width": 170,
+          "height": 24
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 4570,
+          "y": 670,
+          "width": 130,
+          "height": 24,
+          "movement": "vertical",
+          "distance": 110,
+          "speed": 1.8,
+          "phase": 0.4
+        },
+        {
+          "type": "wall",
+          "x": 4805,
+          "y": 560,
+          "width": 170,
+          "height": 24
+        },
+        {
+          "type": "wall",
+          "x": 4980,
+          "y": 430,
+          "width": 180,
+          "height": 24
+        },
+        {
+          "type": "wall",
+          "x": 5480,
+          "y": 960,
+          "width": 1500,
+          "height": 80,
+          "tag": "boss_room_floor_3"
+        },
+        {
+          "type": "wall",
+          "x": 5480,
+          "y": 0,
+          "width": 60,
+          "height": 1040,
+          "tag": "boss_room_left_wall_3"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 6920,
+          "y": 0,
+          "width": 60,
+          "height": 1040,
+          "tag": "boss_room_exit_gate_3",
+          "visible": true
+        },
+        {
+          "type": "toggle_wall",
+          "x": 6980,
+          "y": 824,
+          "width": 312,
+          "height": 24,
+          "tag": "boss_room_exit_bridge_3",
+          "visible": false
+        },
+        {
+          "type": "wall",
+          "x": 5920,
+          "y": 796,
+          "width": 176,
+          "height": 20,
+          "tag": "boss_room_low_left_3"
+        },
+        {
+          "type": "wall",
+          "x": 6640,
+          "y": 784,
+          "width": 188,
+          "height": 20,
+          "tag": "boss_room_low_right_3"
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 6180,
+          "y": 676,
+          "width": 176,
+          "height": 20,
+          "movement": "horizontal",
+          "distance": 150,
+          "speed": 1.8,
+          "phase": 0.0,
+          "tag": "boss_room_mid_platform_3"
+        },
+        {
+          "type": "dynamic_platform",
+          "x": 6390,
+          "y": 520,
+          "width": 154,
+          "height": 20,
+          "movement": "vertical",
+          "distance": 92,
+          "speed": 1.45,
+          "phase": 0.6,
+          "tag": "boss_room_high_platform_3"
+        },
+        {
+          "type": "wall",
+          "x": 7210,
+          "y": 708,
+          "width": 170,
+          "height": 20,
+          "tag": "boss_room_exit_step_3"
+        },
+        {
+          "type": "wall",
+          "x": 5480,
+          "y": 0,
+          "width": 1500,
+          "height": 28,
+          "tag": "boss_room_roof_3"
+        },
+        {
+          "type": "wall",
+          "x": 5480,
+          "y": 0,
+          "width": 120,
+          "height": 320,
+          "tag": "boss_room_left_cap_3"
+        },
+        {
+          "type": "wall",
+          "x": 6880,
+          "y": 0,
+          "width": 100,
+          "height": 260,
+          "tag": "boss_room_right_cap_3"
+        },
+        {
+          "type": "toggle_wall",
+          "x": 5460,
+          "y": 0,
+          "width": 20,
+          "height": 1040,
+          "tag": "boss_room_entry_gate_3",
+          "visible": true
+        },
+        {
+          "type": "wall",
+          "x": 5560,
+          "y": 908,
+          "width": 256,
+          "height": 52,
+          "tag": "boss_room_entry_floor_3"
+        },
+        {
+          "type": "wall",
+          "x": 5840,
+          "y": 822,
+          "width": 132,
+          "height": 20,
+          "tag": "boss_room_entry_step_3"
+        },
+        {
+          "type": "wall",
+          "x": 6940,
+          "y": 0,
+          "width": 40,
+          "height": 260,
+          "tag": "boss_room_right_wall_3"
+        },
+        {
+          "type": "wall",
+          "x": 5800,
+          "y": 604,
+          "width": 170,
+          "height": 20,
+          "tag": "boss_room_upper_left_3"
+        },
+        {
+          "type": "wall",
+          "x": 6210,
+          "y": 470,
+          "width": 144,
+          "height": 20,
+          "tag": "boss_room_upper_mid_3"
+        },
+        {
+          "type": "wall",
+          "x": 6660,
+          "y": 594,
+          "width": 164,
+          "height": 20,
+          "tag": "boss_room_upper_right_3"
+        }
+      ],
+      "enemies": [],
+      "pickups": [],
+      "tokens": [
+        {
+          "type": "token",
+          "x": 968,
+          "y": 804,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 10
+        },
+        {
+          "type": "token",
+          "x": 1218,
+          "y": 724,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 15
+        },
+        {
+          "type": "token",
+          "x": 1492,
+          "y": 644,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 1698,
+          "y": 564,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 1918,
+          "y": 674,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 2368,
+          "y": 744,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 2618,
+          "y": 654,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 3058,
+          "y": 524,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 25
+        },
+        {
+          "type": "token",
+          "x": 3508,
+          "y": 744,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 20
+        },
+        {
+          "type": "token",
+          "x": 4388,
+          "y": 724,
+          "width": 24,
+          "height": 24,
+          "color": "CYAN",
+          "value": 30
+        },
+        {
+          "type": "token",
+          "x": 4828,
+          "y": 524,
+          "width": 24,
+          "height": 24,
+          "color": "PURPLE",
+          "value": 30
+        },
+        {
+          "type": "token",
+          "x": 5028,
+          "y": 394,
+          "width": 24,
+          "height": 24,
+          "color": "YELLOW",
+          "value": 35
+        }
+      ],
+      "hazards": [
+        {
+          "type": "hazard",
+          "x": 1110,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1160,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1210,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        },
+        {
+          "type": "hazard",
+          "x": 1260,
+          "y": 910,
+          "width": 50,
+          "height": 50,
+          "color": "GREY",
+          "direction": "up"
+        }
+      ],
+      "checkpoints": [
+        {
+          "x": 1545,
+          "y": 560,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 1490,
+          "spawn_y": 630,
+          "label": "整备平台"
+        },
+        {
+          "x": 2020,
+          "y": 840,
+          "width": 72,
+          "height": 120,
+          "spawn_x": 2050,
+          "spawn_y": 910,
+          "label": "Boss 前哨"
+        }
+      ],
+      "triggers": [
+        {
+          "id": "trigger_intro_3",
+          "x": 860,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_prep_3",
+          "x": 1420,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_secret_3",
+          "x": 1770,
+          "y": 0,
+          "width": 80,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_boss_3",
+          "x": 2140,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        },
+        {
+          "id": "trigger_finish_3",
+          "x": 7140,
+          "y": 0,
+          "width": 90,
+          "height": 1040,
+          "once": true
+        }
+      ],
+      "events": [
+        {
+          "trigger": "trigger_intro_3",
+          "type": "set_hint",
+          "message": "继续推进，前面是真正的 Boss 房。"
+        },
+        {
+          "trigger": "trigger_prep_3",
+          "type": "drop_platform",
+          "tag": "prep_fall_3",
+          "delay": 20,
+          "message": "前方平台开始松动，动作别停"
+        },
+        {
+          "trigger": "trigger_prep_3",
+          "type": "set_hint",
+          "message": "火球能砸碎护盾节点，进房后别贪站位。"
+        },
+        {
+          "trigger": "trigger_secret_3",
+          "type": "break_fake_wall",
+          "tag": "prep_fake_3",
+          "message": "隐藏补给位显形了"
+        },
+        {
+          "trigger": "trigger_secret_3",
+          "type": "toggle_wall",
+          "tag": "prep_reward_3",
+          "visible": true,
+          "message": "奖励踏板展开"
+        },
+        {
+          "trigger": "trigger_boss_3",
+          "type": "start_boss_room",
+          "message": "传送门锁定，审判者开始充能",
+          "clear_message": "Boss 坠毁，出口桥展开",
+          "lock_tags": [
+            "boss_room_entry_gate_3",
+            "boss_room_exit_gate_3"
+          ],
+          "unlock_tags": [
+            "boss_room_entry_gate_3",
+            "boss_room_exit_gate_3"
+          ],
+          "reveal_tags": [
+            "boss_room_exit_bridge_3"
+          ],
+          "enemies": [
+            {
+              "type": "enemy",
+              "enemy_type": "boss",
+              "x": 6270,
+              "y": 560,
+              "width": 180,
+              "height": 150,
+              "speed": 2.35,
+              "dir": 1,
+              "color": "PURPLE",
+              "health": 86,
+              "boss_name": "天穹审判者",
+              "arena_left": 5680,
+              "arena_right": 6900,
+              "contact_damage": 1,
+              "score_value": 320,
+              "stomp_score": 18,
+              "boss_hover_y": 518
+            }
+          ],
+          "waves": [
+            {
+              "delay": 264,
+              "message": "第一轮巡火眼入场，别站在同一层",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 5850,
+                  "y": 646,
+                  "width": 54,
+                  "height": 40,
+                  "speed": 1.8,
+                  "dir": 1,
+                  "color": "CYAN",
+                  "health": 3,
+                  "patrol_distance": 160,
+                  "hover_amplitude": 24,
+                  "hover_speed": 0.13,
+                  "score_value": 45
+                }
+              ]
+            },
+            {
+              "delay": 484,
+              "message": "高位火眼切入，准备换边",
+              "enemies": [
+                {
+                  "type": "enemy",
+                  "enemy_type": "flyer",
+                  "x": 6730,
+                  "y": 542,
+                  "width": 54,
+                  "height": 40,
+                  "speed": 2.0,
+                  "dir": -1,
+                  "color": "ORANGE",
+                  "health": 3,
+                  "patrol_distance": 170,
+                  "hover_amplitude": 24,
+                  "hover_speed": 0.14,
+                  "score_value": 50
+                }
+              ]
+            },
+            {
+              "delay": 620,
+              "message": "天降爆裂火核，抢到就是输出窗口",
+              "enemies": []
+            }
+          ],
+          "teleport": {
+            "x": 5650,
+            "y": 850
+          },
+          "delay": 36
+        },
+        {
+          "trigger": "trigger_finish_3",
+          "type": "set_hint",
+          "message": "审判者已坠毁，顺着出口桥离开。"
+        },
+        {
+          "trigger": "trigger_boss_3",
+          "type": "drop_buff",
+          "delay": 160,
+          "x": 6060,
+          "y": 556,
+          "buff_type": "burst",
+          "message": "爆裂火核坠下，抢到就狠狠干节点"
+        },
+        {
+          "trigger": "trigger_boss_3",
+          "type": "drop_buff",
+          "delay": 520,
+          "x": 6480,
+          "y": 462,
+          "buff_type": "rapid",
+          "message": "急速咏唱落地，抓紧输出核心"
+        },
+        {
+          "trigger": "trigger_boss_3",
+          "type": "drop_buff",
+          "delay": 700,
+          "x": 6740,
+          "y": 548,
+          "buff_type": "shield",
+          "message": "护体余烬再度坠下，抢到再走入一波"
+        }
+      ],
+      "exit_zone": {
+        "x": 7390,
+        "y": 560,
+        "width": 100,
+        "height": 160
+      }
+    }
+  ]
+}
