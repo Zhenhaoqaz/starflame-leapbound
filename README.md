@@ -95,8 +95,7 @@ python main.py --smoke-test 180
 ├── levels.json
 ├── assets/
 ├── 卡关说明文档.md
-├── 卡关设计文档：平台闯关挑战版 v2.md
-└── PPT汇报说明文档.md
+└── 卡关设计文档：平台闯关挑战版 v2.md
 ```
 
 ## 适合作业汇报的内容
@@ -109,10 +108,8 @@ python main.py --smoke-test 180
 
 ## 来源说明与致谢
 
-本项目以 [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer) 作为早期代码基线，同时参考并沿用了其中部分图画元素。
+本项目以 [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer) 作为早期代码基线，也参考了其中部分图画元素。后面我在这个基础上做了大量本地修改和重构，代码主体、关卡、事件、Boss、技能、UI 和流程都已经是我自己整理出来的二次开发版本，不是对原项目的直接照搬。
 
-需要特别说明的是，当前仓库已经在基线之上进行了大量本地修改与重构，代码主体、关卡、事件、Boss、技能、UI 与流程均已是二次开发后的版本，不是对上游项目的直接照搬。
+## 开源说明
 
-## 开源发布注意事项
-
-仓库内已额外提供 [OPEN_SOURCE_NOTICE.md](OPEN_SOURCE_NOTICE.md)，用于记录当前公开发布时需要说明的来源与授权事项。若你后续拿到上游项目的具体许可证信息，建议再补充到仓库说明中，形成更完整的开源声明。
+来源和授权我单独整理在 [OPEN_SOURCE_NOTICE.md](OPEN_SOURCE_NOTICE.md) 里，这里就不展开写太多了。
