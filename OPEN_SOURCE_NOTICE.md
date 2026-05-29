@@ -2,9 +2,9 @@
 
 ## 1. Project Source
 
-This project is a course-project style derivative work. The art elements were referenced from [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer).
+This project is a course-project style derivative work. The repository started from the code baseline of [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer) and also referenced some of its art elements.
 
-The code logic, level structure, event system, and boss mechanics in this repository were further developed and reorganized locally. This notice only claims the image/art source, not a direct reuse of the upstream code base.
+The code logic, level structure, event system, and boss mechanics in this repository were then heavily modified and reorganized locally. This notice records the upstream baseline and art reference, not a direct reuse of the upstream project as-is.
 
 ## 2. What Has Been Built Here
 
@@ -20,7 +20,7 @@ To keep the attribution complete, please confirm the following before a formal p
 
 1. The license type and redistribution terms of `joshGilstrap/2D-platformer`
 2. The redistribution permission for the local image assets used here
-3. Whether the image source should also be listed separately in `README`
+3. Whether the upstream baseline should be linked separately in `README`
 
 ## 4. Current Policy
 

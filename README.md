@@ -109,9 +109,9 @@ python main.py --smoke-test 180
 
 ## 来源说明与致谢
 
-本项目的图画元素参考自 [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer)。
+本项目以 [joshGilstrap/2D-platformer](https://github.com/joshGilstrap/2D-platformer) 作为早期代码基线，同时参考并沿用了其中部分图画元素。
 
-需要特别说明的是，当前仓库仅使用了上游项目中的图画元素，并未直接沿用其代码逻辑作为主体实现。当前仓库的关卡、事件、Boss、技能、UI 与流程均是本地二次开发和重构后的内容。
+需要特别说明的是，当前仓库已经在基线之上进行了大量本地修改与重构，代码主体、关卡、事件、Boss、技能、UI 与流程均已是二次开发后的版本，不是对上游项目的直接照搬。
 
 ## 开源发布注意事项
 
